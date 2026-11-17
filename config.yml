@@ -1,0 +1,25 @@
+# Teleport-Verzoegerung in Sekunden (0 = sofort). Bewegen bricht ab.
+teleport-delay: 3
+tpa-timeout-seconds: 60
+
+homes:
+  # Gratis-Rang / Standard
+  default: 3
+  # Zusaetzliche Raenge (z.B. per LuckPerms Gruppe -> Permission "group.vip" setzen).
+  # Der hoechste passende Wert gewinnt.
+  ranks:
+    group.vip: 6
+    group.mvp: 10
+    group.admin: 50
+  # Alternativ: Permission  coreplus.homes.<zahl>  (z.B. coreplus.homes.15)
+  # Unbegrenzt: coreplus.homes.unlimited
+
+rtp:
+  world: world
+  radius: 5000
+  # Gesperrte Welten im GUI (mit Permission coreplus.rtp.nether / coreplus.rtp.end nutzbar)
+  nether-locked: true
+  end-locked: true
+  nether-world: world_nether
+  end-world: world_the_end
+  nether-radius: 1000   # (Nether-RTP nutzt sicheren Boden, kann ggf. fehlschlagen)

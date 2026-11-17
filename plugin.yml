@@ -1,0 +1,49 @@
+name: CorePlus
+version: 1.0.0
+main: de.coreplus.CorePlus
+api-version: '1.21'
+description: TPA, Homes, RTP, RTPQ und Spawn
+commands:
+  tpa:
+    description: Teleport-Anfrage senden / annehmen / ablehnen
+    usage: /tpa <Spieler|accept|deny>
+  tpahere:
+    description: Spieler zu dir teleportieren lassen
+    usage: /tpahere <Spieler>
+  tpaccept:
+    description: Anfrage annehmen
+  tpdeny:
+    description: Anfrage ablehnen
+  tpauto:
+    description: Automatisches Annehmen an/aus
+  home:
+    description: Zu einem Home teleportieren
+    usage: /home [name]
+  sethome:
+    description: Home setzen
+    usage: /sethome [name]
+  delhome:
+    description: Home loeschen
+    usage: /delhome <name>
+  homes:
+    description: Liste deiner Homes
+  rtp:
+    description: Zufaelliger Teleport (GUI)
+  rtpq:
+    description: Random-Teleport-Queue mit anderem Spieler
+  spawn:
+    description: Zum Spawn teleportieren
+  setspawn:
+    description: Spawn setzen
+permissions:
+  coreplus.setspawn:
+    default: op
+  coreplus.bypass:
+    description: Kein Teleport-Delay
+    default: op
+  coreplus.rtp.nether:
+    description: Darf RTP im Nether nutzen (wenn gesperrt)
+    default: false
+  coreplus.rtp.end:
+    description: Darf RTP im End nutzen (wenn gesperrt)
+    default: false
